@@ -1,0 +1,149 @@
+<html lang="en">
+    <head>
+        <title>CS220 Personal portfolio</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    </head>
+
+    <body>
+        <main class="bg-blue-100">
+            <!-- Navigation -->
+            <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+            <nav class="relative bg-blue-900">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="rounded-md bg-indigo-400 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500">Home</a>
+                    <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Project</a>
+                    <a href="resume.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Resume</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                    <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="rounded-md bg-indigo-400 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500">Home</a>
+                    <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Project</a>
+                    <a href="resume.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Resume</a>
+                    </div>
+                </el-disclosure>
+            </nav>                      
+
+            <!-- Header-->
+            <header class="py-20">
+            <div class="container mx-auto px-12">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full xl:w-5/12">
+                        <div class="text-center xl:text-left">
+                            <div class="uppercase tracking-widest text-sm text-gray-500 font-semibold">Design - Development - Leadership</div>
+                            <!-- <h3 class="mt-2 text-2xl font-light">This is my personal website</h3> -->
+                             <p class="my-4"> </p>
+                            <h1><span class="text-4xl font-bold">Anlin's portfolio</span></h1>
+                            
+                            <div class="flex flex-col sm:flex-row justify-center xl:justify-start gap-4 my-10">
+                                <a class="px-8 py-4 bg-indigo-500 text-white text-lg font-medium rounded-lg hover:bg-indigo-600 transition-colors" href="resume.html">Resume</a>
+                                <a class="px-8 py-4 border-2 border-indigo-500 text-indigo-500 text-lg font-medium rounded-lg hover:bg-indigo-600 hover:border-indigo-600 hover:text-white transition-colors" href="projects.html">Projects</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full xl:w-7/12">
+                        <div class=" flex justify-center rounded-3xl overflow-hidden">
+                            <img src="me.jpg" class=" max-w-full h-auto" alt="cartoon image of a person smiling and greeting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </header>
+
+            <!-- About Section-->
+            <section class="py-20">
+                <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class="text-center text-3xl font-extrabold mb-4 text-indigo-500">About Me</h2>
+                                            <p class="text-gray-600 text-center leading-relaxed">
+                                               I am interested in computer science, design, and psychology, and UI/UX design 
+                        is the perfect combination of all three. I love designing apps, and I'm very 
+                        curious about how users interact with and react to specific design choices. 
+                        In my free time I like to crochet, watch shows, and try out new boba places!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <span class="text-indigo-500">About Me</span>
+                    </h2>
+                    
+                    <p class="text-xl font-light text-gray-600 mb-6 max-w-2xl mx-auto">
+                        My name is Anlin and I am passionate about UI/UX design!
+                    </p>
+                    
+                    <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
+                        I am interested in computer science, design, and psychology, and UI/UX design 
+                        is the perfect combination of all three. I love designing apps, and I'm very 
+                        curious about how users interact with and react to specific design choices. 
+                        In my free time I like to crochet, watch shows, and try out new boba places!
+                    </p>
+                    
+                    <div class="flex justify-center text-3xl gap-6">
+                        <a class="text-blue-600 hover:text-blue-800 transition-colors" href="#!">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a class="text-blue-600 hover:text-blue-800 transition-colors" href="#!">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div> -->
+            </section>
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-blue-100 py-8 ">
+            <div class="container mx-auto px-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                    <div class="shrink-0">
+                        &copy; Copyright, Anlin's Website 2026
+                    </div>
+                    
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Terms</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
