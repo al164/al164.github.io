@@ -1,0 +1,38 @@
+body{
+  font-family: "Verdana";
+}
+
+.tagline {
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0.375rem;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(135deg, #f16d1b 0%, #971ee2 100%);
+}
+
+.introduction {
+  font-weight: 200;
+}
+
+.subtitle{
+  background: linear-gradient(135deg, #f16d1b 0%, #971ee2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile {
+  position: relative;
+  height: 30vw;
+  border-radius: 5vw;
+  max-height: 40rem;
+  max-width: 40rem;
+  background: #971ee2;
+  background: linear-gradient(135deg, #f16d1b 0%, #971ee2 100%);
+}
+
+
+h2{
+  font-family: 'Courier New', Courier, monospace;
+}

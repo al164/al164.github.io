@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS220 Personal portfolio</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    </head>
+
+    <body>
+        <main>
+            <!-- Navigation -->
+            <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+            <nav class="relative bg-blue-900">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Home</a>
+                    <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Project</a>
+                    <a href="resume.html" class="rounded-md px-3 py-2 text-sm font-medium text-white bg-indigo-400 hover:bg-indigo-500">Resume</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                    <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-blue-950">Home</a>
+                    <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-blue-950">Projects</a>
+                    <a href="resume.html" class="block rounded-md px-3 py-2 text-base font-medium text-white bg-indigo-400 hover:bg-indigo-500 ">Resume</a>
+                    </div>
+                </el-disclosure>
+            </nav> 
+            <section class="py-16 bg-blue-100">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h1 class="text-5xl font-bold"><span class="text-indigo-500">Resume</span></h1>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            
+                            <section>
+                                <div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+                                    <h2 class="text-blue-600 text-3xl font-bold">Experience</h2>
+                                    <a class="inline-flex items-center px-6 py-4 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-colors shadow-lg" href="Resume-1.pdf">
+                                        <i class="bi bi-download mr-2"></i>
+                                        Download Resume
+                                    </a>
+                                </div>
+
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-blue-50 p-6 rounded-3xl">
+                                                    <div class="text-blue-600 font-bold mb-2">2025 - Present</div>
+                                                    <div class="font-bold uppercase text-sm tracking-wider">Student Assistant</div>
+                                                    <div class="text-gray-500 text-sm">Wellesley College Art Library</div>
+                                                    <div class="text-gray-500 text-sm italic">Wellesley, MA</div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <ul>
+                                                    <li>Organize and shelve books</li>
+                                                    <li>Help patrons find, check in, and check out books</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+                            </section>
+
+                            
+                            <section class="mt-16">
+                                <h2 class="text-indigo-600 text-3xl font-bold mb-8">Education</h2>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-indigo-50 p-6 rounded-3xl">
+                                                    <div class="text-indigo-600 font-bold mb-2">2025 - 2029</div>
+                                                    <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">Wellesley College</div>
+                                                        <div class="text-gray-500 text-xs">Wellesley, MA</div>
+                                                    </div>
+                                                    <div class="text-gray-500 text-sm italic">
+                                                        <div>Bachelor of the Arts</div>
+                                                        <div>Media Arts and Sciences</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <ul>
+                                                    <li>Bachelor of the Arts in Media Arts and Sciences</li>
+                                                    <li>Graduating May 2029</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="mt-16">
+                                <h2 class="text-violet-600 text-3xl font-bold mb-8">Community Service</h2>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-violet-50 p-6 rounded-3xl">
+                                                    <div class="text-violet-600 font-bold mb-2">2022 - 2025</div>
+                                                    <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">SD Girls in STEAM</div>
+                                                        <div class="text-gray-500 text-xs">San Diego, CA</div>
+                                                    </div>
+                                                    <div class="text-gray-500 text-sm italic">
+                                                        <div>Secretary</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <ul>
+                                                    <li>Co-lead meetings every other week to discuss upcoming events and divide roles</li>
+                                                    <li>Took meeting minutes to ensure that all members’ upcoming tasks were recorded</li>
+                                                    <li>Recruited female professionals working in STEAM fields for monthly webinars geared toward high school girls interested in STEAM</li>
+                                                    <li>Organized a book drive by contacting 2 local high schools and set up book drive areas in their libraries in order to support low-income families</li>
+                                                    <li>Designed flyers for the book drive on Canva and posted them across the high schools to promote the event</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-violet-50 p-6 rounded-3xl">
+                                                    <div class="text-violet-600 font-bold mb-2">2022 - 2025</div>
+                                                    <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">CCA Girls Who Code</div>
+                                                        <div class="text-gray-500 text-xs">San Diego, CA</div>
+                                                    </div>
+                                                    <div class="text-gray-500 text-sm italic">
+                                                        <div>Student Teacher</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <ul>
+                                                    <li>Created a curriculum and slideshows to teach beginner level Java and Python to 30 middle school girls over Zoom</li>
+                                                    <li>Assisted students with individual questions when not teaching the main class</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-violet-50 p-6 rounded-3xl">
+                                                    <div class="text-violet-600 font-bold mb-2">2021 - 2024</div>
+                                                    <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">Youth Public Service Institute</div>
+                                                        <div class="text-gray-500 text-xs">San Diego, CA</div>
+                                                    </div>
+                                                    <div class="text-gray-500 text-sm italic">
+                                                        <div>Secretary</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <ul>
+                                                    <li>Managed logistics for and contributed to a statewide student-art gallery that raised $6,000 for San Diego’s homeless crisis and mental health advocacy</li>
+                                                    <li>Designed the club’s t-shirt using Canva</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-violet-50 p-6 rounded-3xl">
+                                                    <div class="text-violet-600 font-bold mb-2">2022</div>
+                                                    <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">Costa Rican Biodiversity Education Internship</div>
+                                                        <div class="text-gray-500 text-xs">San Diego, CA</div>
+                                                    </div>
+                                                    <div class="text-gray-500 text-sm italic">
+                                                        <div>Student Teacher</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <ul>
+                                                    <li>Created slideshows to teach English to 6 Costa Rican kids over Zoom in a team of 5</li>
+                                                    <li>Created games on Kahoot and Gimkit that centered around learning vocabulary to make learning fun</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mt-16">
+                                <h2 class="text-purple-600 text-3xl font-bold mb-8">Professional Skills</h2>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                                <div class="bg-purple-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">User Interface Design</div>
+                                                <div class="bg-purple-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">Web Development</div>
+                                                <div class="bg-purple-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">Figma</div>
+                                                <div class="bg-purple-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">Canva</div>
+                                                <div class="bg-purple-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">Google Suite</div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mt-16">
+                                <h2 class="text-fuchsia-600 text-3xl font-bold mb-8">Languages</h2>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                                <div class="bg-fuchsia-50 rounded-2xl p-4 flex items-center justify-center h-full">Java</div>
+                                                <div class="bg-fuchsia-50 rounded-2xl p-4 flex items-center justify-center h-full">Python</div>
+                                                <div class="bg-fuchsia-50 rounded-2xl p-4 flex items-center justify-center h-full">HTML</div>
+                                                <div class="bg-fuchsia-50 rounded-2xl p-4 flex items-center justify-center h-full">CSS</div>
+                                                <div class="bg-fuchsia-50 rounded-2xl p-4 flex items-center justify-center h-full">JavaScript</div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
+        <!-- Footer-->
+        <footer class="bg-blue-100 py-8 ">
+            <div class="container mx-auto px-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                    <div class="shrink-0">
+                        &copy; Copyright, Anlin's Website 2026
+                    </div>
+                    
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Terms</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

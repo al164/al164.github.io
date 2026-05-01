@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS220 Personal portfolio</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    </head>
+
+    <body class="bg-blue-100">
+        <main>
+            <!-- Navigation -->
+            <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+            <nav class="relative bg-blue-900">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950">Home</a>
+                    <a href="projects.html" class="rounded-md px-3 py-2 text-sm bg-indigo-400 font-medium text-white hover:bg-indigo-500 ">Project</a>
+                    <a href="resume.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-blue-950 ">Resume</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                    <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
+                    <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+                    <a href="resume.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Resume</a>
+                    </div>
+                </el-disclosure>
+            </nav> 
+
+            <section class="py-16 bg-blue-100">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h1 class="text-5xl font-bold"><span class="text-indigo-500">Blue Exchange Case Study</span></h1>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class=" text-3xl font-extrabold mb-4 text-blue-800">Problem</h2>
+                                            <p class="text-gray-600 leading-relaxed">
+                                               Through needfinding interviews, our team found that students often had trouble finding tutorials online and that they didn't want to spend money on classes. 
+                                               Thus, we decided to create an app that would allow students to tutor each other, mostly through a system of exchanging services. 
+                                               Our target population was Wellesley College students, mainly those who lived on campus. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class=" text-3xl font-extrabold mb-4 text-blue-800">Contributions</h2>
+                                            <p class="text-gray-600 leading-relaxed">
+                                              All team members contributed in each stage of the project, including storyboarding, interviewing, and desinging on Figma.
+                                              Overall, I drew an initial design sketch, interviewed three users, and designed all of the home and search pages.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class="text-3xl font-extrabold mb-4 text-blue-800">My Design Sketches: Menu,Home,Profile,Messages</h2>
+                                            <div class="flex">
+                                                <img class="w-1/7 h-full object-cover" src="smenu.png" alt="placeholder image"/>
+                                                <img class="w-2/7 h-full object-cover" src="shome.png" alt="placeholder image"/>
+                                                <img class="w-2/7 h-full object-cover" src="sprofile.png" alt="placeholder image"/>
+                                                <img class="w-2/7 h-full object-cover" src="smes.png" alt="placeholder image"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class=" text-3xl font-extrabold mb-4 text-blue-800">Design Process: Home Page</h2>
+                                            <p class="text-gray-600 leading-relaxed">
+                                                At first, our home page included an Upcoming Classes section at the top of the page. Some users felt that it was irrelevant and shouldn't take up such an important location at the top of the home page, so we removed it and added more Suggestions and Exploration sections.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class="text-3xl font-extrabold mb-4 text-blue-800">Home Page: Prototype and Final</h2>
+                                            <div class="flex">
+                                                <img class="w-24/49 h-full object-cover" src="phome.png" alt="placeholder image"/>
+                                                <img class="w-25/49 h-full object-cover" src="fhome.png" alt="placeholder image"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class=" text-3xl font-extrabold mb-4 text-blue-800">Design Process: Search Page</h2>
+                                            <p class="text-gray-600 leading-relaxed">
+                                                Our search bar was not functional at first, which some users disliked, as they felt the search bar was very central and necessary to the app. Some were also curious about what filtering capabilities we would implement. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class="text-3xl font-extrabold mb-4 text-blue-800">Search Page: Filter Functionality</h2>
+                                            <div class="flex">
+                                                <img class="w-1/2 h-full object-cover" src="search.png" alt="placeholder image"/>
+                                                <img class="w-1/2 h-full object-cover" src="searchf.png" alt="placeholder image"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            <div class="bg-white shadow-xl rounded-3xl border-0 mb-10 overflow-hidden">
+                                <div class="p-0">
+                                    <div class="flex flex-col lg:flex-row items-center">
+                                        <div class="p-8 md:p-12">
+                                            <h2 class=" text-3xl font-extrabold mb-4 text-blue-800">Conclusions</h2>
+                                            <p class="text-gray-600 leading-relaxed">
+                                                As the designers, we didn't anticipate that people would have trouble with the layout. Notably, one user didn't realize that they were on the home page because we had forgotten to highlight the current page icon on the menu bar. Small details like these play a big role in making a website intuitive, which is why our user interviews are so valuable. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-blue-100 py-8 ">
+            <div class="container mx-auto px-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                    <div class="shrink-0">
+                        &copy; Copyright, Anlin's Website 2026
+                    </div>
+                    
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Terms</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
